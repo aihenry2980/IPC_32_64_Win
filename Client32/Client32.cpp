@@ -2,6 +2,7 @@
 #include <iostream>
 
 int main() {
+    std::cout << sizeof(int*) << std::endl;
     // Open the named pipe
     HANDLE hPipe = CreateFileW(
         L"\\\\.\\pipe\\MyNamedPipe", GENERIC_READ | GENERIC_WRITE, 0, nullptr,

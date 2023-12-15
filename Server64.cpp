@@ -2,6 +2,8 @@
 #include <iostream>
 
 int main() {
+    std::cout << sizeof(int*) << std::endl;
+
     // Create a named pipe
     HANDLE hPipe = CreateNamedPipeW(
         L"\\\\.\\pipe\\MyNamedPipe", PIPE_ACCESS_DUPLEX,
